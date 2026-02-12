@@ -354,14 +354,7 @@
         function runAway() { const b=document.getElementById('no-btn'); b.style.position='absolute'; b.style.left=Math.random()*70+'%'; b.style.top=Math.random()*70+'%'; }
         function celebrate() { next('s10','s11'); confetti({particleCount: 200, spread: 100}); }
 
-        // --- ANTI-THEFT ---
-        const allowedDomain = "kindbundle-custom.netlify.app"; 
-        if (window.location.hostname !== allowedDomain && window.location.hostname !== "localhost" && window.location.hostname !== "") {
-            document.body.innerHTML = `<div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; background:#000; color:#ff3366; font-family:sans-serif; text-align:center;"><h1>⚠️ ACCESS DENIED</h1><p>This is a premium template owned by Kindbundle.</p><p>You cannot use this code without permission.</p></div>`;
-            throw new Error("Piracy Detected: Code stopped.");
-        }
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        document.addEventListener('keydown', function(e) { if(e.keyCode == 123) { return false; } if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; } if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; } });
+        
     </script>
 </body>
 </html>
