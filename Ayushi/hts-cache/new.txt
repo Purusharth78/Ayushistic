@@ -1,5 +1,0 @@
-date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
-14:42:57	1337/1337	---MCZ	404	error ('Not%20Found')	text/html	etag:1770374955-ssl-df	https://kindbundle-custom.netlify.app/robots.txt		(from )
-14:42:57	29544/29544	---MCZ	200	added ('OK')	text/html	etag:%22b17f1a5f64b82c547931bfa507c85716-ssl-df%22	https://kindbundle-custom.netlify.app/	C:/My%20Web%20Sites/Ayushi/kindbundle-custom.netlify.app/index.html	(from )
-14:42:57	7890/7890	---M-Z	200	added ('OK')	application/javascript	etag:W/%221ed2-S5d1JbU/W2ijNmy5onSU5ANG3mQ%22	https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js	C:/My%20Web%20Sites/Ayushi/cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js	(from https://kindbundle-custom.netlify.app/)
-14:42:58	0/0	---M--	302	error ('Found')	text/html	date:Thu,%2012%20Feb%202026%2009:12:59%20GMT	https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif	C:/My%20Web%20Sites/Ayushi/media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.1.delayed	(from https://kindbundle-custom.netlify.app/)
