@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>For You ❤️</title>
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Fredoka:wght@500&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="../cdn.jsdelivr.net/npm/canvas-confetti%401.6.0/dist/confetti.browser.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;family=Fredoka:wght@500&amp;family=Dancing+Script:wght@700&amp;display=swap" rel="stylesheet">
     <style>
         /* --- THEME --- */
         :root { --primary: #ff3366; --bg: #120508; --glass: rgba(255, 255, 255, 0.1); }
@@ -124,7 +124,7 @@
 
     <div id="creator-app">
         <h1 class="c-title">Love Creator 🛠️</h1>
-        <div class="input-group"><label>Her Name</label><input type="text" id="inp-name" placeholder="e.g. Anjali"></div>
+        <div class="input-group"><label>Her Name</label><input type="text" id="inp-name" placeholder="e.g. Anjali"></di😂v>
         <div class="input-group"><label>Upload 6 Photos</label><div class="upload-area" onclick="document.getElementById('inp-files').click()">📂 Select Photos</div><input type="file" id="inp-files" multiple accept="image/*" style="display:none" onchange="updateFileCount()"><div id="file-status" style="font-size:0.8rem; color:#888; margin-top:5px;"></div></div>
         <button class="gen-btn" onclick="startUpload()">Generate Link 🔗</button>
         <div id="load-bar" style="height:5px; width:0%; background:#ff4d6d; margin-top:10px; transition:0.3s; border-radius:5px;"></div>
@@ -137,19 +137,21 @@
 
         <div id="s1" class="screen active">
             <h1 id="intro-title">Hey <span id="disp-name">You</span>...</h1>
-            <h2 style="font-size:1.1rem; opacity:0.8; margin-bottom:30px;">I have a question for you.<br>Hold the button to enter.</h2>
+            <h2 style="font-size:1.1rem; opacity:0.8; margin-bottom:30px;">I have a question for you.<br>(Fir bolegi jab dekho game game😂).</h2>
             <div class="hold-btn" onmousedown="startHold()" onmouseup="stopHold()" ontouchstart="startHold()" ontouchend="stopHold()">
                 <div class="hold-fill" id="h-fill"></div>
-                <div class="hold-text">Hold For 3 Seconds ⏳</div>
+                <div class="hold-text">Hold this for 3 Seconds ⏳</div>
             </div>
         </div>
 
-        <div id="s2" class="screen"><h1 style="font-size:2rem;">Truth Test 🧐</h1><h2>Who is the bigger drama queen?</h2><div class="btn-opt" onclick="toast('Oh really? 😜')">You (Boy) <span>💁‍♂️</span></div><div class="btn-opt" onclick="next('s2','s3')">Me (Girl) <span>👸</span></div><div class="btn-opt" onclick="toast('Okay... maybe both! 😂')">Both <span>💑</span></div></div>
-        <div id="s3" class="screen"><h1 style="font-size:2rem;">Truth Test 🍕</h1><h2>What makes me happiest?</h2><div class="btn-opt" onclick="toast('Sleep is good, but no! 😴')">Sleep <span>🛌</span></div><div class="btn-opt" onclick="next('s3','s4')">Seeing You <span>😍</span></div><div class="btn-opt" onclick="toast('I wish! 💸')">Money <span>💰</span></div></div>
-        <div id="s4" class="screen"><h1 style="font-size:2rem;">Final Truth 🥺</h1><h2>Can I keep you forever?</h2><div class="btn-opt" onclick="toast('Thinking about it?? 🔪')">Maybe... <span>👉👈</span></div><div class="btn-opt" onclick="toast('Wrong answer! 😤')">No <span>❌</span></div><div class="btn-opt" onclick="next('s4','s_ask')">Yes, Please! <span>💍</span></div></div>
+        <div id="s2" class="screen"><h1 style="font-size:2rem;">Truth Test 🧐</h1><h2>Who started this chaos ?</h2><div class="btn-opt" onclick="toast('Oh really? 😜')">Purusharth <span>💁‍♂️</span></div><div class="btn-opt" onclick="next('s2','s3')">Ayushistic The Cutest <span>👸</span></div><div class="btn-opt" onclick="toast('Okay... maybe both!, But try again 😂')">Both <span>💑</span></div></div>
+
+        <div id="s3" class="screen"><h1 style="font-size:2rem;">Truth Test 💕</h1><h2>What makes me happiest?</h2><div class="btn-opt" onclick="toast('Sleep is good, but no! 😴')">Sleep <span>🛌</span></div><div class="btn-opt" onclick="next('s3','s4')">Seeing You <span>😍</span></div><div class="btn-opt" onclick="toast('I wish! 💸')">Money <span>💰</span></div></div>
+
+        <div id="s4" class="screen"><h1 style="font-size:2rem;">Final Truth 🥺</h1><h2>Can I keep you forever ?</h2><div class="btn-opt" onclick="toast('Lagta hai apko zindagi se pyaar nhi hai 🔪')">Maybe..MaybeNot <span>👉👈</span></div><div class="btn-opt" onclick="toast('BC mukka maar dunga 😤')">No <span>❌</span></div><div class="btn-opt" onclick="next('s4','s_ask')">Yes, Please! <span>💍</span></div></div>
 
         <div id="s_ask" class="screen">
-            <h2 id="pre-game-txt" style="font-size:1.5rem; margin-bottom:30px; line-height:1.5;">Maine aapke liye kuch special banaya hai.<br>Kya aap mere saath ek chhota sa game khelenge? 🌹</h2>
+            <h2 id="pre-game-txt" style="font-size:1.5rem; margin-bottom:30px; line-height:1.5;">Dekha I never forced you to choose any options, You yourself made the right choice 🌹😂.<br>Thode or games khelein ?</h2>
             <div style="display:flex; gap:15px; justify-content:center; width:100%;">
                 <button class="main-btn" onclick="next('s_ask','s5')" style="margin-top:0; background:#25D366;">Ji Haan! ❤️</button>
                 <button class="main-btn" id="pre-no-btn" onclick="handlePreGameNo()" style="margin-top:0; background:transparent; border:2px solid white;">Nahi 🙈</button>
@@ -174,14 +176,14 @@
         <div id="s8" class="screen">
             <h1 style="font-family:'Dancing Script'; font-size:3rem; margin-bottom:20px;">Why I Love You</h1>
             <div class="reasons-list">
-                <div class="reason-item"><div class="r-num">1</div>Your smile brightens my day.</div>
-                <div class="reason-item"><div class="r-num">2</div>You are my biggest supporter.</div>
-                <div class="reason-item"><div class="r-num">3</div>The way you care for me.</div>
-                <div class="reason-item"><div class="r-num">4</div>Your eyes speak to my soul.</div>
+                <div class="reason-item"><div class="r-num">1</div>Watching you smile brightens my day.</div>
+                <div class="reason-item"><div class="r-num">2</div>I love your office bitchin sessions.</div>
+                <div class="reason-item"><div class="r-num">3</div>You have a very cute accent.</div>
+                <div class="reason-item"><div class="r-num">4</div>Turmeric milk peete rehti hai, surrr surrr</div>
                 <div class="reason-item"><div class="r-num">5</div>You are my safe space.</div>
                 <div class="reason-item"><div class="r-num">6</div>I just love everything about you!</div>
             </div>
-            <button class="main-btn" onclick="next('s8','s9')" style="margin-top:30px;">Our World ➜</button>
+            <button class="main-btn" onclick="next('s8','s9')" style="margin-top:30px;">A little surprise➜</button>
         </div>
 
         <div id="s9" class="screen">
@@ -191,13 +193,13 @@
             <button class="main-btn" onclick="next('s9','s10')">One Last Thing ➜</button>
         </div>
 
-        <div id="s10" class="screen"><div id="env" class="wax-envelope" onclick="breakSeal()"><div class="wax-seal" id="seal">❤️</div></div><p id="seal-txt" style="margin-top:20px;">Tap the Wax Seal to Open</p><div id="letter" class="letter-content"><h1 style="font-family:'Dancing Script'; font-size:2.8rem; line-height:1;">Will You Be<br>My Valentine?</h1><p>I promise to annoy you and love you forever.</p><div style="display:flex; gap:15px; margin-top:20px; justify-content:center;"><button class="main-btn" onclick="celebrate()">YES! ❤️</button><button class="main-btn" id="no-btn" style="background:transparent; border:2px solid #ccc; color:#555; box-shadow:none;" onmouseover="runAway()">No</button></div></div></div>
+        <div id="s10" class="screen"><div id="env" class="wax-envelope" onclick="breakSeal()"><div class="wax-seal" id="seal">❤️</div></div><p id="seal-txt" style="margin-top:20px;">Tap the Wax Seal to Open</p><div id="letter" class="letter-content"><h1 style="font-family:'Dancing Script'; font-size:2.8rem; line-height:1;">Will You Be<br>My Valentine?</h1><p>I promise to annoy you and love you forever.<br>(Ab mat bolna "aise kon puchta hai acche se puch 😂")</p><div style="display:flex; gap:15px; margin-top:20px; justify-content:center;"><button class="main-btn" onclick="celebrate()">YES! ❤️</button><button class="main-btn" id="no-btn" style="background:transparent; border:2px solid #ccc; color:#555; box-shadow:none;" onmouseover="runAway()">No</button></div></div></div>
 
         <div id="s11" class="screen">
-            <img src="https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif" class="cute-gif">
+            <img src="https://giphy.com/gifs/26BRv0ThflsHCqDrG" class="cute-gif">
             <h1 style="font-size:3.5rem;">I Knew It! 😎</h1>
-            <p style="font-size:1.2rem; margin-top:10px;">We are made for each other,<br>my forever partner ❤️</p>
-            <div style="font-size:5rem; margin-top:20px;">💍✨</div>
+            <p style="font-size:1.2rem; margin-top:10px;">I really really love you ❤️</p>
+            <div style="font-size:5rem; margin-top:20px;">💕✨</div>
         </div>
     </div>
 
@@ -267,7 +269,7 @@
             photos.reverse().forEach((url, i) => { 
                 const div = document.createElement('div'); div.className='stack-card'; div.style.zIndex = i;
                 div.style.transform = `rotate(${Math.random()*10 - 5}deg)`;
-                div.innerHTML=`<img src="${url}"><div class="stack-caption">Memories ❤️</div>`; 
+                div.innerHTML=`<img src="${url}"><div class="stack-caption">Wear different jacket next time 😂</div>`; 
                 div.onclick = () => { div.classList.add('fly-out'); setTimeout(()=> { div.style.zIndex = -100; div.classList.remove('fly-out'); div.style.transform=`rotate(${Math.random()*10 - 5}deg) scale(0.9)`; }, 500); };
                 box.appendChild(div); 
             });
@@ -282,7 +284,7 @@
 
         // Ask Logic
         let noCount = 0;
-        const noTexts = ["Plz maan jaiye na 🥺", "Aapko pakka pasand aayega! 🌹", "Bas ek baar try kijiye? 👉👈", "Dil todengi mera? 💔", "Ab toh Haan bol dijiye! 🙈"];
+        const noTexts = ["Khel le na 🥺", "Arre badiya game hai! 🌹", "Usme you can win, unlike othello on that date! 👉👈", "Maan Jao na 💔", "Ab toh Haan hi bolna padega! 🙈"];
         function handlePreGameNo() {
             noCount++;
             if(noCount < noTexts.length) { document.getElementById('pre-game-txt').innerText = noTexts[noCount-1]; } 
@@ -292,7 +294,7 @@
         // Memory
         function initMem() {
             const grid = document.getElementById('mem-grid');
-            const items = ['🧸','🧸','🌹','🌹','💍','💍','🍫','🍫']; items.sort(() => Math.random() - 0.5);
+            const items = ['🐧','🐧','🌻','🌻','😘','😘','🍫','🍫']; items.sort(() => Math.random() - 0.5);
             let selected = []; let matched = 0;
             items.forEach((item) => {
                 const card = document.createElement('div'); card.className = 'mem-card';
@@ -320,11 +322,11 @@
                 b.onclick = () => {
                     if(!b.classList.contains('found')) {
                         if(hidden.has(i)) {
-                            b.innerText = '💍'; b.classList.add('found'); 
+                            b.innerText = '❤️'; b.classList.add('found'); 
                             ringsFound++; document.getElementById('ring-status').innerText = `Found: ${ringsFound}/3`;
                             confetti({particleCount:30, spread:50}); if(ringsFound === 3) setTimeout(()=>next('s6','s7'), 1500);
                         } else {
-                            b.innerText = '🙈'; b.classList.add('shake'); toast("Nope! 🙈"); setTimeout(()=> { b.innerText='🎁'; b.classList.remove('shake'); }, 800);
+                            b.innerText = '🙈'; b.classList.add('shake'); toast("Nope! 😂"); setTimeout(()=> { b.innerText='🎁'; b.classList.remove('shake'); }, 800);
                         }
                     }
                 }; g.appendChild(b);
@@ -353,7 +355,6 @@
         function breakSeal() { document.getElementById('seal').style.transform = 'scale(1.5)'; document.getElementById('seal').style.opacity = '0'; setTimeout(() => { document.getElementById('env').classList.add('open'); document.getElementById('seal-txt').style.display = 'none'; setTimeout(() => { document.getElementById('env').style.display='none'; document.getElementById('letter').style.display='block'; }, 500); }, 500); }
         function runAway() { const b=document.getElementById('no-btn'); b.style.position='absolute'; b.style.left=Math.random()*70+'%'; b.style.top=Math.random()*70+'%'; }
         function celebrate() { next('s10','s11'); confetti({particleCount: 200, spread: 100}); }
-
         
     </script>
 </body>
